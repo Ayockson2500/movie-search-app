@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import MovieList from "./component/MovieList";
+import StyledApp from "./StyledApp.styles";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <StyledApp>
+      <nav>
+        <div className="app-logo">MyTestApp</div>
+      </nav>
+      <header>
+        <div className="header-title">
+          <p className="f-w-700 f-s-72">Watch something incredible.</p>
+        </div>
       </header>
-    </div>
+      <section>
+        <div className="searchField">
+          <p>Search</p>
+          <input />
+        </div>
+      </section>
+      <main>
+        <div className="container-fluid movie-app">
+          <div className="row">
+            <MovieList />
+            {/* <MovieList /> */}
+          </div>
+        </div>
+      </main>
+    </StyledApp>
   );
-}
+};
 
 export default App;
