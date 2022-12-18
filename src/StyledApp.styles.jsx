@@ -7,14 +7,13 @@ const StyledApp = styled.div`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: "DM Sans";
+        font-family: 'DM Sans';
     }
     .f-s-72 {
-        font-size: 72;
+        font-size: 32px;
     }
     .f-w-700 {
         font-weight: 700;
-        font-family: "DM Sans";
     }
 
     nav {
@@ -33,10 +32,9 @@ const StyledApp = styled.div`
         width: 100%;
     }
     .header-title {
-        width: 200px;
+        width: 250px;
         position: absolute;
         top: 150px;
-        border: 1px solid white;
     }
     header p {
         color:#FFFFFF;
